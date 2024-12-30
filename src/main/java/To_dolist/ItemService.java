@@ -36,7 +36,13 @@ public class ItemService {
     @Transactional
     public void update(Long id, UpdateItemRequest request) {
         Item item = itemRepository.findById(id).orElseThrow();
+
         item.update(request);
 //        itemRepository.save(item);
     }
+
+//    public ListDetailResponse findAll(Long listId){
+//        itemRepository.
+//        return new ListDetailResponse()
+//    }
 }

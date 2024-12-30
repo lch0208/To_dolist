@@ -1,5 +1,6 @@
 package To_dolist;
 
+import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,8 +31,9 @@ public class ItemController {
     void delete(@PathVariable Long id){
         itemService.delete(id);
     }
-    @GetMapping("")
-    void completed(){
-
-    };
+//    @GetMapping("api/lists/{listId}")
+//    void detailRead(@PathVariable ){
+//        itemService.
+//
+//    };
 }
